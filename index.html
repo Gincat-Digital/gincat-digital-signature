@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="index.css" rel="stylesheet" />
+	<title>Gincat Digital Signature</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Gincat Digital Signature</h1>
+			<p>¡Diseña tu firma corporativa personal! Completa los campos a continuación:</p>
+		</header>
+
+		<!-- Signature form -->
+		<form id="form">
+			<label>
+				Nombre <span>*</span>
+				<input name="name" type="text" required />
+			</label>
+
+			<label>
+				Pronombres
+				<input name="pronouns" type="text" />
+			</label>
+
+			<label>
+				Posición <span>*</span>
+				<input name="position" type="text" required />
+			</label>
+
+			<label>
+				Email body <span>*</span>
+				<input name="email" type="text" />
+			</label>
+
+			<label>
+				Phone
+				<input name="phone" type="text" />
+			</label>
+		</form>
+
+		<!-- Signature container -->
+		<div id="signature-container">
+			<table style="width: 100%; color: #000001; font-family: Roboto, sans-serif; font-size: 12px;">
+				<tbody>
+					<tr style="font-size: 14px;">
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+					<tr style="display: block; margin-top: 6px;">
+						<td>
+							<a href="https://gincat.digital/" style="color: grey; text-decoration: none;">gincat.digital</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<button id="copy-signature" disabled>Copiar firma</button>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+</html>
